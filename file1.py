@@ -1,5 +1,7 @@
 def main():
     student = get_student()
+    if student["name"] == 'druva':
+        student["house"] = "bommini"
     print(f"{student['name']} from {student['house']}")
 
 def get_student():
