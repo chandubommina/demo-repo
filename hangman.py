@@ -19,3 +19,7 @@ while not end_of_game:
     if '_ ' not in blanks:
         end_of_game = True
         print(blanks)
+
+
+
+        
