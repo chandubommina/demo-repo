@@ -26,10 +26,12 @@ def calculator():
         cal_function = operations[op]
         result = cal_function(first, second)
         print(f"{first} {op} {second} is {result}")
-        again = input(f"type 'y' to continue with {result},or type 'n' to new start : ").lower()
+        again = input(f"type 'y' to continue with {result},type 'n' to new start or type anything to exit : ").lower()
         if again == 'n':
             flag = False
             calculator()
-        else:
+        elif again == 'y':
             first = result
+        else:
+            break
 calculator()
