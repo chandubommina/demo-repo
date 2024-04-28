@@ -3,7 +3,7 @@ bids = {}
 bidding_finished = False
 
 def highest_bidder(bidding_record):
-    
+    """Takes dictionary as input"""
     highest_bid = 0
     winner = ''
     for bidder in bidding_record:
